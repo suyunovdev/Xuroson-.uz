@@ -151,7 +151,7 @@ const Footer = () => {
             <div className="container">
               <div className="ends">
                 <p>
-                  Mualliflik huquqi © 2023 <span>Astir</span> Barcha huquqlar
+                  Mualliflik huquqi © 2023 <span>Xuroson</span> Barcha huquqlar
                   himoyalangan
                 </p>
               </div>
