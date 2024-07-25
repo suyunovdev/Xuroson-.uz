@@ -1,0 +1,536 @@
+@import url(https://fonts.googleapis.com/css2?family=Andika&display=swap);
+body {
+  background: rgb(16, 37, 79);
+  font-family: "Andika", sans-serif;
+}
+* {
+  text-decoration: none;
+  /* font-family: Andika !important; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 0;
+}
+/* .alpha {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000e4;
+  /* z-index: 0; */
+/* opacity: 1; */
+
+.bef {
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+.left {
+  z-index: 99;
+  color: white;
+  text-align: center;
+  margin-right: 100px;
+  width: 700px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 100px;
+  /* position: absolute; */
+  gap: 40px;
+  line-height: 50px;
+  /* line-gap-overri    de: inherit; */
+}
+.left button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px rgb(16, 37, 79) solid;
+  background: rgba(16, 37, 79, 0.762);
+  color: white;
+  transition: 0.3s linear;
+  border-radius: 8px;
+}
+.left button:hover {
+  background: rgb(16, 37, 79);
+  color: white;
+  border: rgb(16, 37, 79) 1px solid;
+}
+.btn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  /* max-width: 160px; */
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.rights {
+  /* position: absolute; */
+  /* background-image: url(../../assets/4.jpg); */
+  width: 100px;
+  z-index: 99;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-radius: 300px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+.rights a > img {
+  position: absolute;
+  left: 24px;
+  top: 26px;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  /* position: absolute; */
+  /* right: 0; */
+  border-radius: 200px;
+  background-size: cover;
+}
+
+.portfolio {
+  color: white;
+  background: rgb(16, 37, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+  text-align: center;
+  gap: 70px;
+}
+.portfolio button {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  /* color: #fff; */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  /* max-width: 160px; */
+  /* position: relative; */
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* width: 500px; */
+}
+.btn-1 {
+  align-items: center;
+  text-align: center;
+  /* padding: 0;
+  margin: 0; */
+  background: rgba(16, 37, 79, 0.385);
+  font-weight: 100;
+}
+.btn > button > svg {
+  height: 45px;
+  left: -35px;
+  position: absolute;
+  /* top: 0; */
+  /* width: 100%; */
+}
+.btns {
+  /* padding: 30px; */
+}
+
+.btns svg {
+  height: 45px;
+  left: -28px;
+  position: absolute;
+  /* top: 0; */
+  /* width: 100%; */
+}
+
+rect {
+  fill: none;
+  stroke: rgb(172, 186, 213);
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.btn-1:hover {
+  background: rgba(transparent, 5);
+  /* font-weight: 900; */
+  /* letter-spacing: 1px; */
+
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.about {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%;
+  /* height: 80vh; */
+  border-radius: 8px;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.bttn {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 8px !important;
+  padding: 10px 20px;
+  border: none;
+  background: #199a2d75;
+  color: white;
+  transition: 1s all ease !important;
+}
+.bttn:hover {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  /* border: 2px yellow solid; */
+  box-shadow: 10px 50px 20px transparent transparent;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left_about {
+  width: 50%;
+  /* border: 1px black solid; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 600;
+  /* align-items: center; */
+  padding: 20px;
+  color: white !important;
+}
+.man {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bigges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightes {
+  background-image: url(../assets/remove.png);
+  width: 420px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.discus {
+  margin-top: 50px;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  /* background: rgba(29, 42, 154, 0.278); */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.won {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  cursor: pointer;
+}
+.yozu {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.line {
+  height: 100%;
+  background: rgb(255, 254, 254);
+  width: 2px;
+}
+.aboutme {
+  /* background-image: url(../../assets/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+}
+.hrefs {
+  background: rgba(29, 42, 154, 0.278);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  transition: 0.5s all;
+  text-align: center;
+}
+.hrefs:hover {
+  background: linear-gradient(45deg, red, blue);
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-radius: 8px !important;
+  color: rgb(230, 223, 223) !important;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 60px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(29, 42, 154, 0.278);
+  width: 400px;
+  height: 350px;
+  color: white;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.portfoilos {
+  width: 100%;
+  height: 60vh;
+  /* margin-bottom: 100px;x */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.rightss {
+  width: 350px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  contain: unset;
+  background-image: url(../assets/risonik.png);
+}
+.kotta {
+  width: 600px;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.kotta .hrefs {
+  width: 200px;
+  text-align: center;
+}
+.top {
+  color: white;
+  width: 100%;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.draw {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+.hrefs {
+  width: 300px;
+}
+.jamoa {
+  width: 100%;
+  /* height: 60vh; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.persons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.person {
+  color: white;
+  width: 300px;
+  height: 410px;
+  border-radius: 8px;
+  padding: 8px;
+  background: rgb(29, 41, 154);
+}
+.person img {
+  width: 100%;
+  border-radius: 8px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgb(29, 41, 154);
+  box-shadow: rgb(16, 37, 79) 10px 10px 20px;
+  transition: 0.4s all ease;
+}
+.person:hover .info,
+img {
+  transform: scale(1.02);
+}
+
+.novosti {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.kartalar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.karta {
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgb(29, 41, 154);
+  /* position: relative; */
+}
+.imgs {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  background-image: url(../assets/desney.png);
+}
+.before {
+  /* content: ""; */
+  position: absolute;
+  padding: 7px 15px;
+  background: rgba(16, 37, 79, 0.696);
+  border-radius: 8px;
+  bottom: 52%;
+  right: 10px;
+}
+
+.display {
+  /* padding-left: 20px; */
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: space-around; */
+}
+.display h4,
+h2 {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* .display img {
+  width: 40px;
+  height: 40px;
+}
+.message {
+  width: 40px;
+  height: 40px;
+} */
