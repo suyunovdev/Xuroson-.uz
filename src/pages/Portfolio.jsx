@@ -7,7 +7,8 @@ import f5 from "../assets/f5.png";
 import { FaChevronRight } from "react-icons/fa6";
 import ayiq from "../assets/ayiq.jpg";
 import { FaPlay } from "react-icons/fa6";
-import ayiq2 from "../assets/ayiq2.jpg";
+// import ayiq2 from "./assets/ayiq2.jpg";
+// imort
 
 import { BiCameraMovie } from "react-icons/bi";
 import Aos from "aos";
