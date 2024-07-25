@@ -61,7 +61,7 @@ const Home = () => {
               </h3>
               <button>Bog'lanish</button>
             </div>
-            <div className="rights">
+            <div className="rightsss">
               {" "}
               {/* <iframe
                 width="560"

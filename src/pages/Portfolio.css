@@ -79,15 +79,35 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.btn-imgs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.faplay {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  z-index: 100;
+  margin-left: 120px;
+}
+.faplay {
+  font-size: 1.3em;
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(255, 102, 0, 0.984);
+  color: white;
+  border-radius: 12px;
+}
 .btn-ones button {
   margin-right: 10px;
   padding: 5px;
   border: none;
   font-family: Andika;
   transition: 0.4s;
-  background: rgba(6, 42, 114, 0.984);
   border-radius: 12px;
-  color: white;
 }
 .btn-ones {
   display: flex;
@@ -95,9 +115,8 @@
 }
 
 .btn-ones button:hover {
-  background-color: rgba(31, 72, 153, 0.649);
+  background-color: rgba(6, 42, 114, 0.984);
   color: white;
-  transform: scale(1.08);
 }
 .btn-link a {
   font-family: Andika;
@@ -110,19 +129,36 @@
   flex-direction: column;
   align-items: center;
   background: rgba(0, 21, 63, 0.984);
-  width: 100%;
+  /* width: 100%; */
   padding: 30px;
   border-radius: 12px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .movie {
   font-size: 1.5em;
   color: white;
 }
 .animations {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  /* gap: 15px; */
 }
-@media (min-width: 375px) {
+@media (max-width: 768px) {
+  .animations {
+    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .animation-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 21, 63, 0.984);
+    /* width: ; */
+    padding: 15px;
+    border-radius: 12px;
+    /* margin-right: 20px; */
+  }
 }
