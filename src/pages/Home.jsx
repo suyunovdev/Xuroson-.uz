@@ -15,7 +15,7 @@ import elon from "../assets/elon.jpg";
 import play from "../assets/play.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 
@@ -23,6 +23,30 @@ const Home = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div>
@@ -79,7 +103,7 @@ const Home = () => {
       </div>
 
       <div className="container">
-        <div data-aos="zoom-in-left">
+        <div data-aos="zoom-in-left" className="mine">
           <div className="about">
             <div className="left_about">
               <button className="bttn ">Biz Haqimizda</button>
@@ -208,7 +232,7 @@ const Home = () => {
             animatsiyalari namoyish etiladi.
           </div>
 
-          <div className="rightss" data-aos="zoom-in-down"></div>
+          <div className="rightss"></div>
         </div>
       </div>
       <div className="container">
@@ -329,6 +353,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 };

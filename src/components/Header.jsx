@@ -1,29 +1,31 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaTelegram } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import {
+  FaTelegram,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 import logo from "../assets/logo.png";
 import "./Header.css";
-import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+
 const Header = () => {
-  const [fix, setFix] = useState(false);
-  function setFixd() {
-    if (window.scrollY >= 5) {
-      setFix(true);
-    } else {
-      setFix(false);
-    }
-  }
-  useEffect(() => {
-    Aos.init();
-  }, []);
-  window.addEventListener("scroll", setFixd);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className={`Header ${fix ? "show" : "Header"}`}>
+    <div className="Header">
       <div className="container">
         <div className="header">
           <div
@@ -33,7 +35,10 @@ const Header = () => {
             data-aos-duration="2000">
             <img src={logo} alt="" />
           </div>
-          <div className="all">
+          <div className="menu-icon" onClick={toggleMenu}>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </div>
+          <div className={`all ${isOpen ? "active" : ""}`}>
             <div className="sayt">
               <button>
                 <FaTelegram className="telegrams" data-aos="fade-up-left" />
@@ -48,18 +53,28 @@ const Header = () => {
                 <FaYoutube className="youtubes" data-aos="fade-up-left" />
               </button>
               <button>
-                <FaInstagramSquare
-                  className="instagrams"
-                  data-aos="fade-up-left"
-                />
+                <FaInstagram className="instagrams" data-aos="fade-up-left" />
               </button>
             </div>
+            <div className="close-button" onClick={closeMenu}>
+              <FaTimes />
+            </div>
             <div className="words" data-aos="fade-down">
-              <NavLink to="/">BOSH SAHIFA</NavLink>
-              <NavLink to="/portfolio">PORTFOLIO</NavLink>
-              <NavLink to="/about">BIZ HAQIMIZDA</NavLink>
-              <NavLink to="/blog">BLOG</NavLink>
-              <NavLink to="contact">BOG'LANISH</NavLink>
+              <NavLink to="/" onClick={closeMenu}>
+                BOSH SAHIFA
+              </NavLink>
+              <NavLink to="/portfolio" onClick={closeMenu}>
+                PORTFOLIO
+              </NavLink>
+              <NavLink to="/about" onClick={closeMenu}>
+                BIZ HAQIMIZDA
+              </NavLink>
+              <NavLink to="/blog" onClick={closeMenu}>
+                BLOG
+              </NavLink>
+              <NavLink to="contact" onClick={closeMenu}>
+                BOG'LANISH
+              </NavLink>
             </div>
           </div>
         </div>

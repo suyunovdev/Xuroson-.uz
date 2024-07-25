@@ -1,21 +1,50 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../App.css";
 import { FaChevronRight } from "react-icons/fa6";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { PiMapPinAreaFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
-import { FaTelegram } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import {
+  FaTelegram,
+  FaPhone,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa6";
 import ozbekfilim from "../assets/ozbefilim.svg";
+
 const Contact = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="Contact">
       <section>
@@ -26,7 +55,9 @@ const Contact = () => {
                 <h1>Bog'lanish</h1>
               </div>
               <div className="coll-two" data-aos="fade-up">
-                <p>Bosh saxifa</p>
+                <a href="/">
+                  <p>Bosh saxifa</p>
+                </a>
                 <FaChevronRight className="right" />
                 <p>Bog'lanish</p>
               </div>
@@ -107,7 +138,7 @@ const Contact = () => {
                             />
                           </button>
                           <button>
-                            <FaInstagramSquare
+                            <FaInstagram
                               className="instagrams"
                               data-aos="fade-up-left"
                             />
@@ -167,6 +198,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 };

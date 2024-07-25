@@ -10,8 +10,34 @@ import tv from "../assets/tv.png";
 import shaxsiy from "../assets/shaxsiy.jpg";
 import mark from "../assets/mark.jpg";
 import elon from "../assets/elon.jpg";
+import { useEffect, useState } from "react";
 
 const Aboute = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="hero">
@@ -187,6 +213,11 @@ const Aboute = () => {
           </div>
         </div>
       </div>
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 };

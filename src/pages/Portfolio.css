@@ -1,0 +1,128 @@
+.portfolios {
+  background-image: url(../assets/anime.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+.colls {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  margin-top: 300px;
+}
+.colls-one h1 {
+  font-family: Andika;
+  font-size: 3.4em;
+  margin-bottom: 10px;
+}
+.colls-two {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.colls-two p {
+  font-family: Andika;
+
+  color: white;
+  font-size: 1.2em;
+}
+.str {
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+.Panda {
+  background-color: rgba(0, 17, 50, 0.984);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panda-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.panda-one h1 {
+  color: white;
+  font-family: Andika;
+  font-size: 2.7em;
+  margin-bottom: 15px;
+}
+.panda-one p {
+  color: white;
+  font-family: Andika;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.panda-two {
+  background-image: url(../assets/pandas-one.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.multik {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.multik-one h1 {
+  color: white;
+  font-family: Andika;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.btn-imgs img {
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.btn-ones button {
+  margin-right: 10px;
+  padding: 5px;
+  border: none;
+  font-family: Andika;
+  transition: 0.4s;
+  background: rgba(6, 42, 114, 0.984);
+  border-radius: 12px;
+  color: white;
+}
+.btn-ones {
+  display: flex;
+  align-items: center;
+}
+
+.btn-ones button:hover {
+  background-color: rgba(31, 72, 153, 0.649);
+  color: white;
+  transform: scale(1.08);
+}
+.btn-link a {
+  font-family: Andika;
+
+  color: white;
+  text-decoration: none;
+}
+.animation-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 21, 63, 0.984);
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  margin-right: 20px;
+}
+.movie {
+  font-size: 1.5em;
+  color: white;
+}
+.animations {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 375px) {
+}

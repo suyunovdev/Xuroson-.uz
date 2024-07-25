@@ -3,9 +3,34 @@ import "./Blog.css";
 import { FaMessage } from "react-icons/fa6";
 import { FaUserAlt } from "react-icons/fa";
 import "./Home.css";
-// import { Button } from "@mui/material";
+import { useEffect, useState } from "react";
 
 const Blog = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
       <div className="bloggs">
@@ -86,6 +111,12 @@ const Blog = () => {
           </div>
         </div>
       </div>
+
+      {showButton && (
+        <button className="back-to-top" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 };
