@@ -7,10 +7,15 @@ import Aboute from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import { Helmet } from "react-helmet";
 
 const App = () => {
   return (
     <div>
+      <Helmet>
+        <title>xuroson.uz</title>
+      </Helmet>
+
       <Router>
         <Header />
         <Routes>
