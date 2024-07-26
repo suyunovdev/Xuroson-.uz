@@ -37,12 +37,14 @@ const Portfolio = () => {
         <div className="container">
           <div className="colls">
             <div className="colls-one" data-aos="fade-right">
-              <h1>Bog'lanish</h1>
+              <h1>Portfolio</h1>
             </div>
             <div className="colls-two" data-aos="fade-up">
-              <p>Bosh saxifa</p>
+              <a href="/">
+                <p>Bosh saxifa</p>
+              </a>
               <FaChevronRight className="str" />
-              <p>Bog'lanish</p>
+              <p>Portfolio</p>
             </div>
           </div>
         </div>
