@@ -79,7 +79,7 @@
   margin-bottom: 15px;
 }
 .btn-imgs img {
-  width: 300px;
+  width: 250px;
   object-fit: cover;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -140,15 +140,21 @@
   /* margin-right: 20px; */
 }
 /* .wkjebberwigitrhsdgeifge4grogtjiershiwoifbei */
-he .movie {
+.movie {
   font-size: 1.5em;
   color: white;
 }
 .animations {
   flex-wrap: wrap;
+  /* padding: 10px; */
   display: flex;
   align-items: center;
-  /* gap: 15px; */
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.multik-two {
+  padding: 20px;
 }
 @media (max-width: 768px) {
   .animations {
@@ -158,6 +164,7 @@ he .movie {
     gap: 15px;
   }
   .animation-one {
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;

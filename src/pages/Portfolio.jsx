@@ -158,6 +158,177 @@ const Portfolio = () => {
                     <a href="#">Ayiq Haqida multik</a>
                   </div>
                 </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
+                <div className="animation-one" data-aos="zoom-in">
+                  <div className="btn-ones">
+                    <button>ANIMATSIYA</button>
+                    <button>FILM</button>
+                    <BiCameraMovie className="movie" />
+                  </div>
+                  <div className="btn-imgs">
+                    <a href="https://www.youtube.com/watch?v=RE2QClKir1E">
+                      {" "}
+                      <button className="faplay">
+                        <FaPlay />
+                      </button>
+                    </a>
+                    <img src={ayiq} alt="" />
+                  </div>
+                  <div className="btn-link">
+                    <a href="#">Ayiq Haqida multik</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
