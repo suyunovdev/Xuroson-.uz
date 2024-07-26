@@ -7,8 +7,9 @@ import f3 from "../assets/f3.png";
 import f4 from "../assets/f4.png";
 import f5 from "../assets/f5.png";
 import tv from "../assets/tv.png";
-import shaxsiy from "../assets/shaxsiy.jpg";
+import uzm from "../assets/uzm.jpg";
 import mark from "../assets/mark.jpg";
+
 import elon from "../assets/elon.jpg";
 import { useEffect, useState } from "react";
 
@@ -144,7 +145,7 @@ const Aboute = () => {
 
           <div className="persons" data-aos="zoom-in-down">
             <div className="person" data-aos="fade-down-right">
-              <img src={shaxsiy} alt="" />
+              <img src={uzm} alt="" />
               <div className="info">
                 <div>
                   <h4>Suyunov</h4>

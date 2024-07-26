@@ -1,9 +1,12 @@
 .portfolios {
-  background-image: url(../assets/anime.jpg);
+  background-image: url(../assets/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  /* position: absolute; */
+  z-index: 99;
   height: 90vh;
+  padding-top: 80px;
 }
 .container {
   max-width: 1240px;
@@ -80,6 +83,7 @@
 }
 .btn-imgs img {
   width: 250px;
+  height: 140px;
   object-fit: cover;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -96,7 +100,8 @@
   text-align: center;
   position: absolute;
   z-index: 100;
-  margin-left: 120px;
+  margin-left: 100px;
+  margin-top: -20px;
 }
 .faplay {
   font-size: 1.3em;

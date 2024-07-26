@@ -9,7 +9,6 @@ import f3 from "../assets/f3.png";
 import f4 from "../assets/f4.png";
 import f5 from "../assets/f5.png";
 import tv from "../assets/tv.png";
-import shaxsiy from "../assets/shaxsiy.jpg";
 import mark from "../assets/mark.jpg";
 import elon from "../assets/elon.jpg";
 import play from "../assets/play.png";
@@ -18,6 +17,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
+import uzm2 from "../assets/uzm.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -252,11 +252,11 @@ const Home = () => {
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
-              <img src={shaxsiy} alt="" />
+              <img src={uzm2} alt="" />
               <div className="info">
                 <div>
-                  <h4>Suyunov</h4>
-                  <h4>Ilyos</h4>
+                  <h4>Jonatan</h4>
+                  <h4>Smith</h4>
                 </div>
                 <h5>Web Developer</h5>
               </div>
@@ -319,36 +319,36 @@ const Home = () => {
               className="karta"
               data-aos="fade-up"
               data-aos-anchor-placement="top-center">
-              <div className="imgs"></div>
+              <div className="imgses"></div>
               <div className="before">16.12.2024</div>
               <div className="display">
                 <h4>
                   <FaUserAlt />
-                  Admin
+                  Creater
                 </h4>
                 <h4>
                   <FaMessage />0
                 </h4>
               </div>
-              <h2>Disney</h2>
+              <h2>Cartoon</h2>
             </div>
             <div
               className="karta"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
-              <div className="imgs"></div>
+              <div className="imgss"></div>
               <div className="before">16.12.2024</div>
               <div className="display">
                 <h4>
                   <FaUserAlt />
-                  Admin
+                  Pohotgraph
                 </h4>
                 <h4>
                   <FaMessage />0
                 </h4>
               </div>
-              <h2>Disney</h2>
+              <h2>Photographer</h2>
             </div>
           </div>
         </div>

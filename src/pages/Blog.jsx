@@ -72,36 +72,36 @@ const Blog = () => {
               className="karta"
               data-aos="fade-up"
               data-aos-anchor-placement="top-center">
-              <div className="imgs"></div>
+              <div className="imgses"></div>
               <div className="before">16.12.2024</div>
               <div className="display">
                 <h4>
                   <FaUserAlt />
-                  Admin
+                  Creater
                 </h4>
                 <h4>
                   <FaMessage />0
                 </h4>
               </div>
-              <h2>Disney</h2>
+              <h2>Cartoon</h2>
             </div>
             <div
               className="karta"
               data-aos="fade-left"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine">
-              <div className="imgs"></div>
+              <div className="imgss"></div>
               <div className="before">16.12.2024</div>
               <div className="display">
                 <h4>
                   <FaUserAlt />
-                  Admin
+                  Pohotgraph
                 </h4>
                 <h4>
                   <FaMessage />0
                 </h4>
               </div>
-              <h2>Disney</h2>
+              <h2>Photographer</h2>
             </div>
           </div>
           <div className="large">

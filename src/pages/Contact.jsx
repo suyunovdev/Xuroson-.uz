@@ -156,14 +156,18 @@ const Contact = () => {
               <div className="box-two-first-one">
                 <h1>BIZNING HAMKORLAR</h1>
               </div>
-              <div className="box-two-first-two">
-                <img src={ozbekfilim} alt="" />
-                <img src={ozbekfilim} alt="" />
+              <marquee behavior="" direction="">
+                {" "}
+                <div className="box-two-first-two">
+                  <img src={ozbekfilim} alt="" />
 
-                <img src={ozbekfilim} alt="" />
+                  <img src={ozbekfilim} alt="" />
 
-                <img src={ozbekfilim} alt="" />
-              </div>
+                  <img src={ozbekfilim} alt="" />
+
+                  <img src={ozbekfilim} alt="" />
+                </div>
+              </marquee>
             </div>
             <div className="box-two-secend" data-aos="fade-left">
               <div className="last-one">
