@@ -31,7 +31,7 @@
 
 .container {
   max-width: 1240px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0 20px;
 }
 .body {
@@ -301,7 +301,8 @@ input {
 }
 .three-two {
   display: flex;
-  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
 }
 .three-input-one {
@@ -323,7 +324,10 @@ input {
   gap: 10px;
 }
 .three-input-two textarea {
-  width: 180%;
+  /* width: 180%; */
+  resize: vertical;
+  padding: 20px;
+  color: gray;
   height: 23vh;
   outline: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);

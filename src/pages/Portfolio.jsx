@@ -114,7 +114,7 @@ const Portfolio = () => {
                         <FaPlay />
                       </button>
                     </a>
-                    <img src={ayiq2} alt="" />
+                    <img src={ayiq} alt="" />
                   </div>
                   <div className="btn-link">
                     <a href="#">Ayiq Haqida multik</a>
