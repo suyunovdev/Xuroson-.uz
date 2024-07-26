@@ -31,7 +31,7 @@
 
 .container {
   max-width: 1240px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   padding: 0 20px;
 }
 .body {
@@ -105,13 +105,14 @@
   height: 450px;
 }
 .box-ones {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
 }
 .box-one-contact {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   background-color: rgb(16, 37, 79);
   padding: 45px;
 }
@@ -188,13 +189,14 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  flex-wrap: wrap;
 }
 .box-two-first {
   display: flex;
   flex-direction: column;
   background-color: rgb(16, 37, 79);
   padding: 30px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .box-two-first-one h1 {
   text-align: center;
@@ -206,7 +208,7 @@
 }
 .box-two-first-two img {
   width: 100px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   margin-bottom: 50px;
 }
 .box-two-secend {
@@ -214,7 +216,8 @@
   flex-direction: column;
   background-color: rgb(16, 37, 79);
   padding: 5px;
-  margin-left: 30px;
+
+  /* margin-left: 30px; */
 }
 .last-one {
   display: flex;
@@ -244,7 +247,7 @@
 .input-one {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .input-one input {
@@ -357,4 +360,402 @@ input {
 .three-input-two button:hover {
   background-color: rgba(24, 150, 218, 0.8);
   color: aliceblue;
+}
+@media (max-width: 368px) {
+  * {
+    font-size: 16px !important;
+  }
+  .box-three {
+    padding: 0;
+  }
+  .three-input-one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-right: 10px; */
+  }
+  .three-input-one input {
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    /* margin-bottom: 10px; */
+  }
+  .three-input-two input {
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    /* margin-bottom: 10px; */
+  }
+  .box-ones {
+    width: 367px;
+  }
+  .box-one-map {
+    width: 367px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+
+  .container {
+    max-width: 1240px;
+    /* margin: 0 auto; */
+    padding: 0 20px;
+  }
+  .body {
+    font-family: "Andika", sans-serif;
+  }
+  .home p {
+    margin-top: 170px;
+  }
+  .contact {
+    background-image: url(../src/assets/panda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .coll {
+    display: flex;
+    flex-direction: column;
+    color: white !important;
+    padding: 50px;
+    margin-top: 300px;
+    position: absolute;
+  }
+  .coll-one h1 {
+    font-family: Andika;
+    font-size: 3.4em;
+    margin-bottom: 10px;
+  }
+  .coll-two {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .coll-two p {
+    font-family: Andika;
+
+    color: white;
+    font-size: 1.2em;
+  }
+  .right {
+    margin-top: 5px;
+    font-size: 0.7em;
+  }
+  .Box {
+    background-color: rgba(0, 17, 50, 0.984);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 50px; */
+  }
+  .box-one-h1 h1 {
+    font-family: Andika;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .maps {
+    width: 500px;
+    height: 450px;
+  }
+  .box-ones {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+  }
+  .box-one-contact {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 50px; */
+    background-color: rgb(16, 37, 79);
+    padding: 45px;
+  }
+  .box-one-contact-first {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-one-contact-first h3 {
+    font-family: Andika;
+    color: white;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+  .box-one-contact-first p {
+    font-family: Andika;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .box-one-contact-secend {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .secend-one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .secend-one p {
+    font-family: Andika;
+    color: white;
+    font-size: 0.8em;
+    margin-left: 7px;
+  }
+  .locetion {
+    font-size: 1.4em;
+    color: rgb(254, 254, 254);
+  }
+  .locetions {
+    font-size: 1.2em;
+    color: rgb(254, 254, 254);
+  }
+  .end-one h3 {
+    font-family: Andika;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .sayts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .sayts button {
+    font-size: 1.2em;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 38, 110);
+    cursor: pointer;
+    transition: 0.4s;
+    width: 30px;
+    height: 30px;
+  }
+  .sayts button:hover {
+    background-color: rgba(24, 150, 218, 0.8);
+    color: aliceblue;
+  }
+  .box-two {
+    width: 367px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 50px; */
+    flex-wrap: wrap;
+  }
+  .box-two-first {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 37, 79);
+    padding: 30px;
+    /* margin-right: 20px; */
+  }
+  .box-two-first-one h1 {
+    text-align: center;
+    font-family: Andika;
+    color: white;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .box-two-first-two img {
+    width: 100px;
+    /* margin-right: 20px; */
+    margin-bottom: 50px;
+  }
+  .box-two-secend {
+    display: flex;
+    /* flex-direction: column; */
+    background-color: rgb(16, 37, 79);
+    padding: 5px;
+    flex-wrap: wrap;
+    width: 367px;
+    /* margin-left: 30px; */
+  }
+  .last-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin-bottom: 30px; */
+  }
+  .last-one h2 {
+    color: white;
+    font-family: Andika;
+    /* margin-bottom: 20px; */
+  }
+
+  .last-one p {
+    color: white;
+    font-family: Andika;
+    /* width: 500px; */
+  }
+  .last-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+  }
+  .input-one {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin-right: 10px; */
+  }
+
+  .input-one input {
+    /* width: 250px; */
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    outline: none;
+    font-family: Andika;
+  }
+  input {
+    background: transparent;
+    border: white 1px solid;
+    border-radius: 8px;
+    color: white;
+  }
+  .input-two textarea {
+    /* width: 230px; */
+    height: 185px;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .last-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 48px;
+  }
+  .last-three button {
+    font-size: 1.2em;
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(16, 37, 79);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .box-three {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 37, 79);
+    padding: 40px;
+    /* margin-bottom: 100px; */
+  }
+  .three-one {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Andika;
+    margin-bottom: 20px;
+  }
+  .three-two {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .three-input-one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-right: 10px; */
+  }
+  .three-input-one input {
+    outline: none;
+    /* width: 600px; */
+    padding: 15px;
+    /* margin-bottom: 10px; */
+  }
+  .three-input-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .three-input-two textarea {
+    /* width: 180%; */
+    resize: vertical;
+    padding: 20px;
+    color: gray;
+    height: 23vh;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .three-input-two input {
+    outline: none;
+    /* width: 490px; */
+    padding: 15px;
+    border: 1px white solid;
+    /* margin-top: 10px; */
+  }
+  .file {
+    width: 80%;
+    color: white;
+  }
+  .three-input-two button {
+    font-size: 1.2em;
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(16, 37, 79);
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.4s;
+  }
+  .three-input-two button:hover {
+    background-color: rgba(24, 150, 218, 0.8);
+    color: aliceblue;
+  }
 }

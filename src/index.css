@@ -66,3 +66,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+@media (max-width: 368px) {
+  html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .Header {
+    width: 368px;
+  }
+}

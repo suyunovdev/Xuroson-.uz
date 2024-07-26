@@ -42,7 +42,7 @@ const Aboute = () => {
     <div>
       <div className="hero">
         <div className="container">
-          <div className="abouts" data-aos="fade-right">
+          <div className="abouts">
             <h1> Biz haqimizda</h1>
             <p>
               <a href="/">Bosh Sahifa </a> <IoIosArrowForward /> Biz Haqimizda
